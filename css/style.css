@@ -142,7 +142,8 @@ h1, h2, h3, h4, h5, h6 {
   top: 60px;
   right: 0;
   height: calc(50% - 60px);
-  display: flex;
+  /*display: flex;*/
+  display: inline;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -195,7 +196,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #intro .btn-get-started:hover {
-  color: #1dc8cd;
+  color: #1aa0cd;
   background: #fff;
 }
 
@@ -1033,7 +1034,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Gallery Section
 --------------------------------*/
 #gallery {
-  background: #fff;
+  /*background: #fff;*/
+  background: red;
   padding: 60px 0 0 0;
   overflow: hidden;
 }
