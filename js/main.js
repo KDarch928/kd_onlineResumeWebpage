@@ -17,17 +17,6 @@ jQuery(document).ready(function($) {
     return false;
   });
 
-  // Initiate the wowjs animation library
-  new WOW().init();
-
-  // Initiate superfish on nav menu
-  $('.nav-menu').superfish({
-    animation: {
-      opacity: 'show'
-    },
-    speed: 400
-  });
-
   // Mobile Navigation
   if ($('#nav-menu-container').length) {
     var $mobile_nav = $('#nav-menu-container').clone().prop({
@@ -40,13 +29,6 @@ jQuery(document).ready(function($) {
     $('body').append($mobile_nav);
     $('body').prepend('<button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>');
     $('body').append('<div id="mobile-body-overly"></div>');
-    $('#mobile-nav').find('.menu-has-children').prepend('<i class="fa fa-chevron-down"></i>');
-
-    $(document).on('click', '.menu-has-children i', function(e) {
-      $(this).next().toggleClass('menu-item-active');
-      $(this).nextAll('ul').eq(0).slideToggle();
-      $(this).toggleClass("fa-chevron-up fa-chevron-down");
-    });
 
     $(document).on('click', '#mobile-nav-toggle', function(e) {
       $('body').toggleClass('mobile-nav-active');
@@ -69,13 +51,18 @@ jQuery(document).ready(function($) {
   }
 
   // Smoth scroll on page hash links
-  $('.nav-menu a, #mobile-nav a, .scrollto').on('click', function() {
+  $('.nav-menu a, #mobile-nav a, .scrollto').on('click', function(event) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       if (target.length) {
+
+        //event.preventDefault();
+
         var top_space = 0;
 
         if ($('#header').length) {
+
+
           top_space = $('#header').outerHeight();
 
           if( ! $('#header').hasClass('header-fixed') ) {
@@ -83,9 +70,10 @@ jQuery(document).ready(function($) {
           }
         }
 
-        $('html, body').animate({
+        $('html, body').stop().animate({
           scrollTop: target.offset().top - top_space
-        }, 1500, 'easeInOutExpo');
+          //   scrollTop: target.offset().top
+        }, 1500);
 
         if ($(this).parents('.nav-menu').length) {
           $('.nav-menu .menu-active').removeClass('menu-active');
@@ -101,25 +89,5 @@ jQuery(document).ready(function($) {
       }
     }
   });
-
-  // Gallery - uses the magnific popup jQuery plugin
-  $('.gallery-popup').magnificPopup({
-    type: 'image',
-    removalDelay: 300,
-    mainClass: 'mfp-fade',
-    gallery: {
-      enabled: true
-    },
-    zoom: {
-      enabled: true,
-      duration: 300,
-      easing: 'ease-in-out',
-      opener: function(openerElement) {
-        return openerElement.is('img') ? openerElement : openerElement.find('img');
-      }
-    }
-  });
-
-  // custom code
 
 });
