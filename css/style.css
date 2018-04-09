@@ -561,7 +561,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Education Section
 --------------------------------*/
 #education {
-  background: #fff;
+  /*background: #fff;*/
   padding: 60px 0 0 0;
   overflow: hidden;
 }
@@ -723,7 +723,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 #call-to-action {
   overflow: hidden;
-  background: linear-gradient(rgba(29, 200, 205, 0.65), rgba(29, 205, 89, 0.2)), url(../img/call-to-action-bg.jpg) fixed center center;
+  background: linear-gradient(45deg, rgba(28, 191, 224, 0.5), rgba(33, 135, 183, 0.5)), url(../img/smartbldg.jpg) fixed center center;
   background-size: cover;
   padding: 80px 0;
 }
@@ -1125,6 +1125,14 @@ _________________________________ */
     filter: alpha(opacity=100);
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
+}
+
+/* Portfolio Section 
+--------------------------------*/
+
+#portfolio {
+  padding: 60px 0 0 0;
+  overflow: hidden;
 }
 
 /* Contact Section
