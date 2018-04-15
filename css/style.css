@@ -490,7 +490,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
-/* About Us Section
+/* About Section
 --------------------------------*/
 #about {
   padding: 60px 0;
@@ -646,80 +646,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-bottom: 10px;
 }
 
-/* Product Advanced Featuress Section
---------------------------------*/
-#advanced-features {
-  overflow: hidden;
-}
 
-#advanced-features .features-row {
-  padding: 60px 0 30px 0;
-}
 
-#advanced-features h2 {
-  font-size: 26px;
-  font-weight: 700;
-  color: #000;
-}
-
-#advanced-features h3 {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  font-style: italic;
-  color: #999;
-}
-
-#advanced-features p {
-  line-height: 24px;
-  color: #777;
-  margin-bottom: 30px;
-}
-
-#advanced-features i {
-  color: #666666;
-  font-size: 64px;
-  transition: 0.5s;
-  float: left;
-  padding: 0 15px 0px 0;
-  line-height: 1;
-}
-
-#advanced-features i:before {
-  background: #1aa0cd;
-  background: linear-gradient(45deg, #1aa0cd 0%, #1cbfe0 100%);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-#advanced-features .advanced-feature-img-right {
-  max-width: 100%;
-  float: right;
-  padding: 0 0 30px 30px;
-}
-
-#advanced-features .advanced-feature-img-left {
-  max-width: 100%;
-  float: left;
-  padding: 0 30px 30px 0;
-}
-
-@media (max-width: 768px) {
-  #advanced-features .advanced-feature-img-right, #advanced-features .advanced-feature-img-left {
-    max-width: 50%;
-  }
-}
-
-@media (max-width: 767px) {
-  #advanced-features .advanced-feature-img-right, #advanced-features .advanced-feature-img-left {
-    max-width: 100%;
-    float: none;
-    padding: 0 0 30px 0;
-  }
-}
-
-/* Call To Action Section
+/* Quote Section
 --------------------------------*/
 #call-to-action {
   overflow: hidden;
@@ -765,14 +694,23 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 2px solid #1aa0cd;
 }
 
-/* More Features Section
+/* Skills Section
 --------------------------------*/
-#more-features {
+#skills {
   padding: 60px 0 60px 0;
   overflow: hidden;
 }
 
-#more-features .box {
+/*#more-features .info i {*/
+  /*font-size: 32px;*/
+  /*color: #1aa0cd;*/
+  /*float: left;*/
+  /*line-height: 1;*/
+  /*padding-right: 15px;*/
+  /*margin-bottom: 20px;*/
+/*}*/
+
+#skills .box {
   padding: 40px;
   margin-bottom: 30px;
   box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
@@ -780,18 +718,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.4s;
 }
 
-#more-features .icon {
+#skills .icon {
   float: left;
 }
 
-#more-features .icon i {
+#skills .icon i {
   color: #666666;
   font-size: 80px;
   transition: 0.5s;
   line-height: 0;
 }
 
-#more-features .icon i:before {
+#skills *, ::after, ::before {
+  list-style: none;
+}
+
+#skills .icon i:before {
   background: #1aa0cd;
   background: linear-gradient(45deg, #1aa0cd 0%, #1cbfe0 100%);
   background-clip: border-box;
@@ -799,131 +741,109 @@ body.mobile-nav-active #mobile-nav-toggle {
   -webkit-text-fill-color: transparent;
 }
 
-#more-features h4 {
-  margin-left: 100px;
+#skills .skill-stars {
+  margin-left: 260px;
+  /* transform: scale(1);
+  transition: all 0.3s ease-in-out 0.2s; */
+}
+
+/* #more-features .skill-stars:hover {
+  transform: scale(1.3);
+  transition: all 0.3s ease-in-out 0.1s;
+} */
+
+#skills .skill-box {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-left: 40px;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out 0.2s;
+}
+
+#skills .skill-box:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+#skills .star-color {
+  color: #1aa0cd;
+}
+
+#skills .star-lg-gray {
+  color: lightgray;
+}
+
+#skills h4 {
+  /* margin-left: 100px; */
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
+  float: left;
 }
 
-#more-features h4 a {
+#skills ul {
+  list-style: none;
+}
+
+#skills h4 a {
   color: #111;
-}
+} 
 
-#more-features p {
+
+
+#skills p {
   font-size: 14px;
   margin-left: 100px;
   margin-bottom: 0;
   line-height: 24px;
 }
 
+@media (max-width: 1200px){
+  #skills .skill-stars {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 987px){
+  #skills .skill-stars {
+    margin-left: 400px;
+  }
+}
+
 @media (max-width: 767px) {
-  #more-features .box {
+  #skills .box {
     margin-bottom: 20px;
   }
-  #more-features .icon {
+  #skills .icon {
     float: none;
     text-align: center;
     padding-bottom: 15px;
   }
-  #more-features h4, #more-features p {
+  #skills h4, #skills p {
     margin-left: 0;
     text-align: center;
   }
+  #skills .skill-stars {
+    margin-left: 260px;
+  }
 }
 
-/* Clients Section
---------------------------------*/
-#clients {
-  padding: 30px 0;
-  background: #fff;
-  overflow: hidden;
+@media (max-width: 516px) {
+  #skills .skill-stars {
+    margin-left: 220px;
+  }
 }
 
-#clients img {
-  max-width: 100%;
-  opacity: 0.5;
-  transition: 0.3s;
-  padding: 15px 0;
+@media (max-width: 476px){
+  #skills .skill-stars {
+    margin-left: 180px;
+  }
 }
 
-#clients img:hover {
-  opacity: 1;
-}
-
-/* Pricing Section
---------------------------------*/
-#pricing {
-  padding: 60px 0 60px 0;
-  overflow: hidden;
-}
-
-#pricing .box {
-  padding: 40px;
-  margin-bottom: 30px;
-  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
-  background: #fff;
-  text-align: center;
-}
-
-#pricing h3 {
-  font-weight: 400;
-  margin-bottom: 15px;
-  font-size: 28px;
-}
-
-#pricing h4 {
-  font-size: 46px;
-  color: #1aa0cd;
-  font-weight: 300;
-}
-
-#pricing h4 sup {
-  font-size: 20px;
-  top: -20px;
-}
-
-#pricing h4 span {
-  color: #bababa;
-  font-size: 20px;
-}
-
-#pricing ul {
-  padding: 0;
-  list-style: none;
-  color: #999;
-  text-align: left;
-  line-height: 20px;
-}
-
-#pricing ul li {
-  padding-bottom: 12px;
-}
-
-#pricing ul i {
-  color: #1aa0cd;
-  font-size: 18px;
-  padding-right: 4px;
-}
-
-#pricing .get-started-btn {
-  background: #515e61;
-  display: inline-block;
-  padding: 6px 30px;
-  border-radius: 20px;
-  color: #fff;
-  transition: none;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Montserrat", sans-serif;
-}
-
-#pricing .featured {
-  border: 2px solid #1aa0cd;
-}
-
-#pricing .featured .get-started-btn {
-  background: linear-gradient(45deg, #1cbfe0, #1aa0cd);
+@media (max-width: 431px) {
+  #skills .skill-stars {
+    margin-left: 120px;
+  }
 }
 
 /* Frequently Asked Questions Section
@@ -1195,7 +1115,7 @@ _________________________________ */
     transform: translate3d(0,0,0);
 }
 
-.hovereffect a, .hovereffect p {
+.hovereffect a, .hovereffect p, .hovereffect h3 {
     color: #FFF;
     opacity: 0;
     filter: alpha(opacity=0);
@@ -1205,7 +1125,7 @@ _________________________________ */
     transform: translate3d(100%,0,0);
 }
 
-.hovereffect:hover a, .hovereffect:hover p {
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h3 {
     opacity: 1;
     filter: alpha(opacity=100);
     -webkit-transform: translate3d(0,0,0);
@@ -1218,6 +1138,25 @@ _________________________________ */
 #portfolio {
   padding: 60px 0 0 0;
   overflow: hidden;
+}
+
+#portfolio .btn-view-project {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#portfolio .btn-view-project:hover {
+  color: #1aa0cd;
+  background: #fff;
 }
 
 /* Contact Section
