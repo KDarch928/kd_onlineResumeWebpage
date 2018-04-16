@@ -575,14 +575,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
 }
 
-/*@media (min-width: 769px) {*/
-  /*#education .features-img {*/
-    /*padding-top: 120px;*/
-    /*margin-top: -200px;*/
-  /*}*/
-/*}*/
-
-
 #education .box {
   margin-bottom: 15px;
   text-align: left;
@@ -599,24 +591,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
 
 }
-
-/*#education .icon {*/
-  /*margin-bottom: 10px;*/
-/*}*/
-
-/*#education .icon i {*/
-  /*color: #666666;*/
-  /*font-size: 40px;*/
-  /*transition: 0.5s;*/
-/*}*/
-
-/*#education .icon i:before {*/
-  /*background: #1aa0cd;*/
-  /*background: linear-gradient(45deg, #1aa0cd 0%, #1cbfe0 100%);*/
-  /*background-clip: border-box;*/
-  /*-webkit-background-clip: text;*/
-  /*-webkit-text-fill-color: transparent;*/
-/*}*/
 
 #education .title {
   font-weight: 300;
@@ -700,15 +674,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 60px 0 60px 0;
   overflow: hidden;
 }
-
-/*#more-features .info i {*/
-  /*font-size: 32px;*/
-  /*color: #1aa0cd;*/
-  /*float: left;*/
-  /*line-height: 1;*/
-  /*padding-right: 15px;*/
-  /*margin-bottom: 20px;*/
-/*}*/
 
 #skills .box {
   padding: 40px;
@@ -840,9 +805,19 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
+@media (max-width: 454px){
+  #skills .skill-stars {
+    margin-left: 160px;
+  }
+}
+
 @media (max-width: 431px) {
   #skills .skill-stars {
-    margin-left: 120px;
+    margin-left: 145px;
+  }
+
+  #skills .skill-box {
+    margin-left: 0px;
   }
 }
 
@@ -990,57 +965,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   /*content: "\f2c7" !important;*/
 }
 
-/* Our Team Section
---------------------------------*/
-#team {
-  padding: 60px 0;
-  overflow: hidden;
-}
-
-#team .member {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-#team .member .pic {
-  margin-bottom: 15px;
-  overflow: hidden;
-  height: 260px;
-}
-
-#team .member .pic img {
-  max-width: 100%;
-}
-
-#team .member h4 {
-  font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 18px;
-}
-
-#team .member span {
-  font-style: italic;
-  display: block;
-  font-size: 13px;
-}
-
-#team .member .social {
-  margin-top: 15px;
-}
-
-#team .member .social a {
-  color: #b3b3b3;
-}
-
-#team .member .social a:hover {
-  color: #1aa0cd;
-}
-
-#team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
-
 /*image text overlay
 _________________________________ */
 
@@ -1157,6 +1081,25 @@ _________________________________ */
 #portfolio .btn-view-project:hover {
   color: #1aa0cd;
   background: #fff;
+}
+
+#portfolio .btn-github {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #1aa0cd;
+  color: #1aa0cd;
+}
+
+#portfolio .btn-github:hover {
+  color: #fff;
+  background: #1aa0cd;
 }
 
 /* Contact Section
