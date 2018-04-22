@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
 #header.header-fixed {
   background: linear-gradient(45deg, #1cbfe0, #2187b7);
   padding: 20px 0;
-  height: 72px;
+  height: 80px;
   transition: all 0.5s;
 }
 
@@ -171,6 +171,12 @@ h1, h2, h3, h4, h5, h6 {
   #intro h2 {
     font-size: 28px;
     line-height: 36px;
+  }
+}
+
+@media (max-width: 570px){
+  #intro .intro-text {
+    display: flex;
   }
 }
 
@@ -494,6 +500,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 #about {
   padding: 60px 0;
+  padding-left: 5%;
+  padding-right: 5%;
   overflow: hidden;
 }
 
@@ -821,6 +829,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
+@media (max-width: 400px) {
+  #skills .skill-stars {
+    margin-left: 100px;
+  }
+
+  #skills .skill-box {
+    margin-left: 0px;
+  }
+}
+
 /* Frequently Asked Questions Section
 --------------------------------*/
 #faq {
@@ -833,7 +851,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   list-style: none;
 }
 
-#faq #faq-list li {
+#faq #faq-list ul {
   border-bottom: 1px solid #ddd;
 }
 
@@ -919,6 +937,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #experience #faq-list li {
+  /* border-bottom: 1px solid #ddd; */
+  padding-bottom: 2px;
+}
+
+#experience #exp-boarder {
   border-bottom: 1px solid #ddd;
 }
 
@@ -1106,8 +1129,7 @@ _________________________________ */
 /* Professional Organizations Section
 --------------------------------*/
 #organizations {
-  padding: 30px 0;
-  /* background: #fff; */
+  padding: 60px 0 0 0;
   overflow: hidden;
 }
 
