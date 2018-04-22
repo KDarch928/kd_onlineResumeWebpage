@@ -831,7 +831,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width: 400px) {
   #skills .skill-stars {
-    margin-left: 100px;
+    margin-left: 120px;
   }
 
   #skills .skill-box {
