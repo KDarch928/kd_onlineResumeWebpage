@@ -118,6 +118,18 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
 }
 
+@media (max-width: 991px) {
+  #header.header-fixed {
+    height: 114px;
+  }
+}
+
+@media (max-width: 768px) {
+  #header.header-fixed {
+    height: 60px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
@@ -566,6 +578,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-bottom: 10px;
 }
 
+@media (max-width: 991px ){
+  #about .content {
+    margin-top: 30px;
+  }
+}
+
 /* Education Section
 --------------------------------*/
 #education {
@@ -804,6 +822,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (max-width: 516px) {
   #skills .skill-stars {
     margin-left: 220px;
+  }
+}
+
+@media (max-width: 492px) {
+  #skills .skill-stars {
+    margin-left: 200px;
   }
 }
 
