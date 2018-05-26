@@ -60,13 +60,13 @@
             <a href="#education">Education</a>
           </li>
           <li>
-            <a href="#skills">Program Skills</a>
+            <a href="#skills">Skills</a>
           </li>
           <li>
             <a href="#portfolio">Portfolio</a>
           </li>
           <li>
-            <a href="#organizations">Professional Organizations</a>
+            <a href="#organizations">Organizations</a>
           </li>
           <li>
             <a href="#contact">Contact</a>
@@ -87,11 +87,39 @@
       <!--<h2>Interactive Resume</h2>-->
       <h5>IT Support Analyst and Web Developer</h5>
       <a href="#about" class="btn-get-started scrollto">Get Started</a>
-      <a href="resume/Kayle_Drucker_Resume.pdf" download="Kayle_Drucker_Resume.pdf" class="btn-get-started">Resume</a>
+      <!-- Button to Open the Modal -->
+      <a href="" class="btn-get-started" data-toggle="modal" data-target="#resumeModal">Resume</a>
+      <!-- <a href="resume/Kayle_Drucker_Resume.pdf" download="Kayle_Drucker_Resume.pdf" class="btn-get-started">Resume</a> -->
     </div>
 
   </section>
   <!-- #intro -->
+
+  <!-- The Modal -->
+  <div class="modal fade" id="resumeModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Resume</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <embed src="resume/Kayle_Drucker_Resume.pdf" type="application/pdf"   height="400px" width="100%" class="responsive">
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <a href="" class="btn-res" data-dismiss="modal">Close</a>
+          <a href="resume/Kayle_Drucker_Resume.pdf" download="Kayle_Drucker_Resume.pdf" class="btn-res">Download</a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
 
   <main id="main">
 
@@ -287,7 +315,7 @@
           <!--<p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>-->
         </div>
 
-        <!-- <div class="row">
+        <div class="row">
 
           <div class="col-lg-2">
 
@@ -299,7 +327,7 @@
                 <strong>Full Stack Developer</strong>
               </a>
             </h4>
-            <h6>Anticipated Graduation Date May 2018</h6>
+            <h6>May 2018</h6>
             <p class="description school-link">
               <a href="">Northwestern University</a>
             </p>
@@ -311,7 +339,7 @@
           <div class="col-lg-2">
 
           </div>
-        </div> -->
+        </div>
 
         <div class="row">
           <div class="col-lg-2">
@@ -375,7 +403,7 @@
     <section id="call-to-action">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 text-center text-lg-left">
+          <div class="col-lg-12 text-center">
             <!--<h3 class="cta-title">Call To Action</h3>-->
             <p class="cta-text"> I can’t change the direction of the wind, but I can adjust my sails to always reach my destination.</p>
             <p class="cta-text">— Jimmy Dean</p>
@@ -810,6 +838,7 @@
               </div>
             </div>
           </div>
+
           <div class="col-lg-4 col-md-6">
             <div class="portfolio-item animated fadeInUp hovereffect">
               <img src="img/projects/psychic.jpg" alt="Psychic Game">
@@ -821,6 +850,7 @@
               </div>
             </div>
           </div>
+
           <div class="col-lg-4 col-md-6">
             <div class="portfolio-item animated fadeInUp hovereffect">
               <img src="img/projects/express.jpg" alt="Giphy Search">
@@ -832,6 +862,7 @@
               </div>
             </div>
           </div>
+
           <div class="col-lg-4 col-md-6">
             <div class="portfolio-item animated fadeInUp hovereffect">
               <img src="img/projects/crystals.png" alt="Crystal Game">
@@ -843,6 +874,7 @@
               </div>
             </div>
           </div>
+
           <div class="col-lg-4 col-md-6">
             <div class="portfolio-item animated fadeInUp hovereffect">
               <a href="img/gallery/gallery-6.jpg" class="portfolio-popup">
@@ -856,6 +888,7 @@
               </div>
             </div>
           </div>
+
           <div class="col-lg-4 col-md-6">
             <div class="portfolio-item animated fadeInUp hovereffect">
               <img src="img/projects/chi-building.jpg" alt="Chicago Buildings Hangman">
@@ -864,6 +897,18 @@
                   <strong>Chicago Architectural Buildings Hangman Game</strong>
                 </h3>
                 <a href="https://github.com/KDarch928/week-11-js-constructors" target="_blank" class="btn-view-project">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-item animated fadeInUp hovereffect">
+              <img src="img/projects/liri.jpg" alt="Liri Node Application">
+              <div class="overlay">
+                <h3>
+                  <strong>Liri Node Application</strong>
+                </h3>
+                <a href="https://github.com/KDarch928/liri-node-app" target="_blank" class="btn-view-project">View Project</a>
               </div>
             </div>
           </div>

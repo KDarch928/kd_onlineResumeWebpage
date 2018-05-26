@@ -219,6 +219,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10px;
   border: 2px solid #fff;
   color: #fff;
+  background: none;
 }
 
 #intro .btn-get-started:hover {
@@ -276,6 +277,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
+# Module
+--------------------------------------------------------------*/
+#resumeModal .btn-res {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #1aa0cd;
+  color: #1aa0cd;
+}
+
+#resumeModal .btn-res:hover {
+  color: #fff;
+  background: #1aa0cd;
+}
+
+
+/*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Nav Menu Essentials */
@@ -322,6 +346,12 @@ h1, h2, h3, h4, h5, h6 {
 #nav-menu-container {
   float: right;
   margin: 0;
+}
+
+@media (max-width: 1199px){
+  #nav-menu-container {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -392,6 +422,12 @@ h1, h2, h3, h4, h5, h6 {
 
 #mobile-nav-toggle i {
   color: #fff;
+}
+
+@media (max-width: 1199px) {
+  #mobile-nav-toggle {
+    display: inline;
+  }
 }
 
 @media (max-width: 768px) {
@@ -593,11 +629,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #education .info i {
-  font-size: 32px;
+  font-size: 20px;
   color: #1aa0cd;
   float: left;
   line-height: 1;
-  padding-right: 15px;
+  padding-right: 8px;
   margin-bottom: 20px;
 }
 
@@ -941,11 +977,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #experience .info i {
-  font-size: 32px;
+  font-size: 20px;
   color: #1aa0cd;
   float: left;
   line-height: 1;
-  padding-right: 15px;
+  padding-right: 8px;
   margin-bottom: 20px;
 }
 
